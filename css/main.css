@@ -41,7 +41,7 @@
     grid-area: container-mailingList;
 }
 
-.container-grid{
+.container-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
@@ -115,7 +115,7 @@ h1 {
 .navbar .menu-items {
     display: flex;
     background-color: white;
-    width: 100vh;
+    width: 100vw;
     position: relative;
     z-index: 1;
 }
@@ -191,12 +191,13 @@ h1 {
 
 .navbar .menu-items {
     height: 100vh;
-    width: 100%;
+    width: 50%;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
     justify-content: center;
+    margin-left: -1rem;
 }
 
 .navbar .menu-items li {
@@ -424,7 +425,7 @@ h1 {
 }
 
 .footer-SocialMedia-content a {
-    margin: 1.rem;
+    margin: 1rem;
     color: white;
 }
 
@@ -434,9 +435,27 @@ h1 {
     margin-left: 1rem;
 }
 
-.display{
+.display {
     display: none;
 }
+
+.carousel {
+    margin: 2rem;
+
+}
+
+.contacto-title {
+    text-align: center;
+    margin: 3rem;
+}
+
+.btn {
+    display: flex;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+
 
 @media screen and (min-width:600px) {
 
@@ -640,7 +659,7 @@ h1 {
         display: block;
     }
 
-    .display{
+    .display {
         display: block;
     }
 
@@ -830,32 +849,34 @@ h1 {
 
 /* Animaciones */
 .text-focus-in:hover {
-	-webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
- @-webkit-keyframes text-focus-in {
+@-webkit-keyframes text-focus-in {
     0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
     }
+
     100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
     }
-  }
-  @keyframes text-focus-in {
+}
+
+@keyframes text-focus-in {
     0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
     }
+
     100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
     }
-  }
-  
+}
