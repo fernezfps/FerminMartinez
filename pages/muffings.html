@@ -16,15 +16,14 @@
 
 <body>
 
-    <div class="container-grid">
-        <section class="container-header">
+    <div class="container-body">
+        <header>
             <div class="header">
 
-                <div class="title">
-                    <h1 class="title-background">Bruce's Shop</h1>
+                <div class="logo">
+                    <h1><a href="../index.html">Bruce's Shop</a></h1>
                 </div>
 
-                <!-- Menú -->
                 <nav>
                     <div class="navbar">
                         <div class="container nav-container">
@@ -47,218 +46,192 @@
                         </div>
                     </div>
 
-                    <div class="icons">
+                    <div class="header__searchBar">
 
                         <i class='bx bx-search' id="search"></i>
                         <a href="#cart"><i class='bx bx-cart'></i></a>
 
                     </div>
                 </nav>
+
+            </div>
+        </header>
+
+        <main>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/carousel1.jpg" class="d-block w-100 h-40" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/carousel2.jpg" class="d-block w-100 h-40" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/carousel3.jpg" class="d-block w-100 h-40" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
-            <!-- Search & Cart -->
+            <div class="main__subtitle">
+                <h2>Hecho con amor</h2>
+                <p> Bienvenido al apartado de nuestros deliciosos muffings!</p>
+            </div>
 
+            <div class="main__categories">
+
+                <div class="main__categories-muffings">
+                    <p>Muffing</p>
+                    <a href="./cuadros.html"><img src="../img/muffing7.jpg"></a>
+                </div>
+
+                <div class="main__categories-muffings">
+                    <p>Muffing</p>
+                    <a href="./handmade.html"><img src="../img/muffing8.jpg"></a>
+                </div>
+
+                <div class="main__categories-muffings">
+                    <p>Muffing</p>
+                    <a href="./comida.html"><img src="../img/muffing9.jpg"></a>
+                </div>
+
+            </div>
+
+            <div class="main__categories-btn">
+                <button><a href="#">Cargar más</a></button>
+            </div>
+
+        </main>
+
+        <section class="section-newProducts">
+            <div class="newProducts">
+
+                <h3 class="newProducts__title">Todos nustros muffings!</h3>
+                <div class="product">
+                    <a href="#"><img src="../img/muffing1.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+                <div class="product">
+                    <a href="#"><img src="../img/muffing2.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+                <div class="product">
+                    <a href="#"><img src="../img/muffing3.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+                <div class="product">
+                    <a href="#"><img src="../img/muffing4.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+                <div class="product">
+                    <a href="#"><img src="../img/muffing5.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+                <div class="product">
+                    <a href="#"><img src="../img/muffing6.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+                <div class="product">
+                    <a href="#"><img src="../img/muffing7.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+                <div class="product">
+                    <a href="#"><img src="../img/muffing8.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+                <div class="product">
+                    <a href="#"><img src="../img/muffing9.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+                <div class="product">
+                    <a href="#"><img src="../img/muffing10.jpg"></a>
+                    <p>Muffing</p>
+                    <p class="price">$100 c/u</p>
+                </div>
+
+            </div>
         </section>
 
-        <!-- Categories -->
-        <section class="container-categories">
+        <section class="section-mailingList">
+            <div class="mailingList">
 
-            <section class="container-categories">
-
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../img/carousel1.jpg" class="d-block w-100 h-auto" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/carousel2.jpg" class="d-block w-100 h-auto" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/carousel3.jpg" class="d-block w-100 h-auto" alt="...">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <div class="mailingList__content">
+                    <h2 class="mailingList__title">No te pierdas de lo nuevo!</h2>
+                    <p class="mailingList__text">Recibe notificaciones sobre los nuevos productos y promociones.</p>
+                    <button class="mailingList__btn"><a href="./contacto.html">Ingresa para recibir
+                            ofertas!</a></button>
                 </div>
 
-                <!-- Slogan de la página e información sobre la misma  -->
-                <div class="subtitle">
-                    <h2 class="subtitle-h2">Hecho con amor</h2>
-                    <p class="subtitle-h2_content">
-                        Ventas de Tortas, Muffings, Cuadros sobre vidrio, Hand made y mucho más!
-                    </p>
+            </div>
+        </section>
+
+        <footer>
+
+            <div class="footerContent">
+
+                <div class="footerItems-left">
+                    <p class="footerItems-left-Cookies">Cookies</p>
+                    <p>Política de privacidad</p>
                 </div>
 
-                <!-- Categorías -->
-                <div class="categories">
-
-                    <!-- Cuadros -->
-                    <div class="categories-cuadros ">
-                        <p class="textCuadros">Muffing</p>
-                        <a href="pages/cuadros.html"><img src="../img/muffing4.jpg"></a>
-                    </div>
-
-                    <!-- Hand Made -->
-                    <div class="categories-handmade ">
-                        <p class="textHandMade">Muffing Halloween</p>
-                        <a href="pages/handmade.html"><img src="../img/muffing5.jpg"></a>
-                    </div>
-
-                    <div class="display">
-                        <p class="textHandMade">Muffing</p>
-                        <a href="pages/handmade.html"><img src="../img/muffing1.jpg"></a>
-                    </div>
-
+                <div class="footerItems-right">
+                    <p class="footerItems-right-Politics">Aviso Legal</p>
+                    <p>Términos y condiciones</p>
                 </div>
 
-                <div class="categories-btn">
-                    <button class="categories-btn__a"><a href="#">Cargar más</a></button>
-                </div>
-
-            </section>
-
-            <!-- Products -->
-            <section class="container-newProducts">
-                <!-- Sección de nuevos productos -->
-                <div class="container-newProduct">
-                    <h3 class="title-newProduct">Todas los MUFFINGS!</h3>
-
-
-                    <!-- Muffings de Chocolate marmolado -->
-
-                    <div class="product1">
-                        <a href="#"><img src="../img/muffing1.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
+                <div class="social-Media">
+                    <div class="footer-SocialMedia-title">
+                        <p>Siguenos en las redes</p>
                     </div>
-
-                    <!-- Muffings de Chocolate y chispas | Dscripción -->
-                    <div class="product2">
-                        <a href="#"><img src="../img/muffing2.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
-                    </div>
-
-                    <!-- Carabanas | Descripción -->
-                    <div class="product3">
-                        <a href="#"><img src="../img/muffing3.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
-                    </div>
-
-                    <!-- Joyero de procelana | Descripción -->
-                    <div class="product4">
-                        <a href="#"><img src="../img/muffing4.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
-                    </div>
-
-                    <!-- Rolls de canela | Descripción-->
-                    <div class="product5">
-                        <a href="#"><img src="../img/muffing5.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
-                    </div>
-
-                    <div class="product6">
-                        <a href="#"><img src="../img/muffing6.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
-                    </div>
-
-                    <div class="product7">
-                        <a href="#"><img src="../img/muffing7.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
-                    </div>
-
-                    <div class="product8">
-                        <a href="#"><img src="../img/muffing8.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
-                    </div>
-
-                    <div class="product9">
-                        <a href="#"><img src="../img/muffing9.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
-                    </div>
-
-                    <div class="product9">
-                        <a href="#"><img src="../img/muffing10.jpg"></a>
-                        <p>Muffing</p>
-                        <p class="price">$100 c/u</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Mailing List -->
-            <section class="container-mailingList">
-                <div class="mailingList">
-                    <div class="mailingList-content">
-                        <h2 class="mailingList-title">No te pierdas de lo nuevo!</h2>
-                        <p class="mailingList-contentParagraph">Recibe notificaciones sobre los nuevos productos y
-                            promociones.
-                        </p>
-
-                        <button class="mailingList-btn"><a href="pages/contacto.html">Ingresa para recibir
-                                ofertas!</a></button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="container-footer">
-
-                <div class="footerContent">
-
-
-
-                    <div class="footerItems-left">
-                        <p class="footerItems-left-Cookies">Cookies</p>
-                        <p>Política de privacidad</p>
-                    </div>
-
-                    <div class="footerItems-right">
-                        <p class="footerItems-right-Politics">Aviso Legal</p>
-                        <p>Términos y condiciones</p>
-                    </div>
-
-
-
-                    <!-- Social Media -->
-                    <div class="social-Media">
-                        <div class="footer-SocialMedia-title">
-                            <p>Siguenos en las redes</p>
-                        </div>
-                        <div class="footer-SocialMedia-content">
-                            <a href="#facebook"><i class='bx bxl-facebook'></i></a>
-                            <a href="#twitter"><i class='bx bxl-twitter'></i></a>
-                            <a href="#instagram"><i class='bx bxl-instagram'></i></a>
-                        </div>
-                    </div>
-
-
-                    <!-- Copyright -->
-                    <div class="copyright">
-                        <p>Bruce's Shop es una marca registrada. © 2022</p>
-                        <p>By Fermín Martínez</p>
+                    <div class="footer-SocialMedia-content">
+                        <a href="#facebook" class=" text-focus-in"><i class='bx bxl-facebook'></i></a>
+                        <a href="#twitter" class=" text-focus-in"><i class='bx bxl-twitter'></i></a>
+                        <a href="#instagram" class=" text-focus-in"><i class='bx bxl-instagram'></i></a>
                     </div>
                 </div>
 
-            </section>
 
+                <!-- Copyright -->
+                <div class="copyright">
+                    <p class=" text-focus-in">Bruce's Shop es una marca registrada. © 2022</p>
+                    <p class=" text-focus-in">By Fermín Martínez</p>
+                </div>
+            </div>
+
+        </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

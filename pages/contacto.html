@@ -19,53 +19,50 @@
 <body>
 
     <header>
+        <div class="header">
 
-        <div class="container-grid">
-            <section class="container-header">
-                <div class="header">
+            <div class="logo">
+                <h1><a href="../index.html">Bruce's Shop</a></h1>
+            </div>
 
-                    <div class="title">
-                        <h1 class="title-background">Bruce's Shop</h1>
+            <nav>
+                <div class="navbar">
+                    <div class="container nav-container">
+                        <input class="checkbox" type="checkbox" />
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+
+                        <div class="menu-items">
+                            <ul>
+                                <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="./tortas.html">Tortas</a></li>
+                                <li><a href="./muffings.html">Muffings</a></li>
+                                <li><a href="./galletitas.html">Galletitas</a></li>
+                                <li><a href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
                     </div>
-
-                    <!-- Menú -->
-                    <nav>
-                        <div class="navbar">
-                            <div class="container nav-container">
-                                <input class="checkbox" type="checkbox" />
-                                <div class="hamburger-lines">
-                                    <span class="line line1"></span>
-                                    <span class="line line2"></span>
-                                    <span class="line line3"></span>
-                                </div>
-
-                                <div class="menu-items">
-                                    <ul>
-                                        <li><a href="../index.html">Inicio</a></li>
-                                        <li><a href="./tortas.html">Tortas</a></li>
-                                        <li><a href="./muffings.html">Muffings</a></li>
-                                        <li><a href="./galletitas.html">Galletitas</a></li>
-                                        <li><a href="./contacto.html">Contacto</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="icons">
-
-                            <i class='bx bx-search' id="search"></i>
-                            <a href="#cart"><i class='bx bx-cart'></i></a>
-
-                        </div>
-                    </nav>
                 </div>
+
+                <div class="header__searchBar">
+
+                    <i class='bx bx-search' id="search"></i>
+                    <a href="#cart"><i class='bx bx-cart'></i></a>
+
+                </div>
+            </nav>
+
+        </div>
     </header>
 
     <main>
 
         <h1 class="contacto-title">Contáctanos</h1>
         <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            data-bs-whatever="@mdo">Contactar</button>
+            data-bs-whatever="@mdo">Haz click aquí</button>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -109,59 +106,53 @@
             </div>
         </div>
 
-        <!-- Mailing List -->
+        <section class="section-mailingList">
+            <div class="mailingList">
 
-        <div class="mailingList">
-            <div class="mailingList-content">
-                <h2 class="mailingList-title">No te pierdas de lo nuevo!</h2>
-                <p class="mailingList-contentParagraph">Recibe notificaciones sobre los nuevos productos y promociones.
-                </p>
-
-                <button class="mailingList-btn"><a href="../pages/contacto.html">Ingresa para recibir
-                        ofertas!</a></button>
-            </div>
-        </div>
-    </main>
-
-    <section class="container-footer">
-
-        <div class="footerContent">
-
-
-
-            <div class="footerItems-left">
-                <p class="footerItems-left-Cookies">Cookies</p>
-                <p>Política de privacidad</p>
-            </div>
-
-            <div class="footerItems-right">
-                <p class="footerItems-right-Politics">Aviso Legal</p>
-                <p>Términos y condiciones</p>
-            </div>
-
-
-
-            <!-- Social Media -->
-            <div class="social-Media">
-                <div class="footer-SocialMedia-title">
-                    <p>Siguenos en las redes</p>
+                <div class="mailingList__content">
+                    <h2 class="mailingList__title">No te pierdas de lo nuevo!</h2>
+                    <p class="mailingList__text">Recibe notificaciones sobre los nuevos productos y promociones.</p>
+                    <button class="mailingList__btn"><a href="./contacto.html">Ingresa para recibir
+                            ofertas!</a></button>
                 </div>
-                <div class="footer-SocialMedia-content">
-                    <a href="#facebook"><i class='bx bxl-facebook'></i></a>
-                    <a href="#twitter"><i class='bx bxl-twitter'></i></a>
-                    <a href="#instagram"><i class='bx bxl-instagram'></i></a>
+
+            </div>
+        </section>
+
+        <footer>
+
+            <div class="footerContent">
+
+                <div class="footerItems-left">
+                    <p class="footerItems-left-Cookies">Cookies</p>
+                    <p>Política de privacidad</p>
+                </div>
+
+                <div class="footerItems-right">
+                    <p class="footerItems-right-Politics">Aviso Legal</p>
+                    <p>Términos y condiciones</p>
+                </div>
+
+                <div class="social-Media">
+                    <div class="footer-SocialMedia-title">
+                        <p>Siguenos en las redes</p>
+                    </div>
+                    <div class="footer-SocialMedia-content">
+                        <a href="#facebook" class=" text-focus-in"><i class='bx bxl-facebook'></i></a>
+                        <a href="#twitter" class=" text-focus-in"><i class='bx bxl-twitter'></i></a>
+                        <a href="#instagram" class=" text-focus-in"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    <p class=" text-focus-in">Bruce's Shop es una marca registrada. © 2022</p>
+                    <p class=" text-focus-in">By Fermín Martínez</p>
                 </div>
             </div>
 
-
-            <!-- Copyright -->
-            <div class="copyright">
-                <p>Bruce's Shop es una marca registrada. © 2022</p>
-                <p>By Fermín Martínez</p>
-            </div>
-        </div>
-
-    </section>
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

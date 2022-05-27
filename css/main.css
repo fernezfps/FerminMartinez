@@ -13,32 +13,36 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     grid-template-areas:
-        "container-header"
-        "container-categories"
-        "container-newProducts"
-        "container-mostSelleds"
-        "container-mailingList"
-        "container-footer";
+        "header"
+        "main"
+        "newProducts"
+        "mostSelleds"
+        "mailingList"
+        "footer";
 }
 
-.container-header {
-    grid-area: container-header;
+header {
+    grid-area: header;
 }
 
-.container-categories {
-    grid-area: container-categories;
+main {
+    grid-area: main;
 }
 
-.container-newProducts {
-    grid-area: container-newProducts;
+.section-newProducts {
+    grid-area: newProducts;
 }
 
-.container-mostSelleds {
-    grid-area: container-mostSelleds;
+.section-mostSelleds {
+    grid-area: mostSelleds;
 }
 
-.container-mailingList {
-    grid-area: container-mailingList;
+.section-mailingList {
+    grid-area: mailingList;
+}
+
+footer {
+    grid-area: footer;
 }
 
 .container-grid {
@@ -46,44 +50,44 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
-        "container-header"
-        "container-categories"
-        "container-newProducts"
-        "container-mailingList"
-        "container-footer";
+        "header"
+        "main"
+        "newProducts"
+        "mailingList"
+        "footer";
 }
 
-.title {
+.logo {
     display: flex;
     justify-content: center;
-    color: white;
-    font-style: italic;
 }
 
-.title-background {
+.logo h1 {
     background-color: black;
     margin-top: 30px;
-    display: inline-block;
     padding: 10px;
-}
-
-h1 {
     font-size: 1.5rem;
 }
 
-.icons {
+.logo h1 a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.header__searchBar {
     position: absolute;
-    right: 0%;
+    right: 0;
     top: 0;
     margin-top: 2.2rem;
     display: flex;
 }
 
-.icons i, a {
+.header__searchBar i, a {
     color: black;
 }
 
-.icons i {
+.header__searchBar i {
     font-size: 1.7rem;
     margin: 0.7rem 2rem 0rem 0rem;
 }
@@ -191,13 +195,15 @@ h1 {
 
 .navbar .menu-items {
     height: 100vh;
-    width: 50%;
+    width: 100vw;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
     justify-content: center;
     margin-left: -1rem;
+    margin-top: -3.3vh;
+    flex-shrink: 0;
 }
 
 .navbar .menu-items li {
@@ -227,60 +233,54 @@ h1 {
     display: none;
 }
 
-.headerDesktop {
-    display: none;
-}
-
-.subtitle {
+.main__subtitle {
     width: 20rem;
 }
 
-.subtitle-h2 {
+.main__subtitle h2 {
     font-size: 3.75rem;
+    margin-bottom: 2rem;
+
 }
 
 .headerMobile {
     width: 100vw;
 }
 
-.subtitle {
+.main__subtitle {
     margin: auto;
     text-align: center;
     margin-top: 2rem;
 }
 
-.subtitle-h2 {
-    margin-bottom: 2rem;
-}
-
-.subtitle-h2_content {
+.main__subtitle p {
     font-family: 'Poppins';
     width: 19rem;
 }
 
-.categories {
+.main__categories {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
 }
 
-.categories div {
+.main__categories div {
     margin: auto;
     margin-bottom: 2rem;
 }
 
-.categories img {
+.main__categories img {
     width: 80vw;
 }
 
-.categories p {
+.main__categories p {
     position: absolute;
     color: white;
     font-size: 2rem;
     margin: 0.5rem;
 }
 
-.categories-btn {
+.main__categories-btn {
     padding: 1rem 8rem 1rem 8rem;
     background-color: black;
     text-align: center;
@@ -289,32 +289,32 @@ h1 {
 
 }
 
-.categories-btn__a {
+.main__categories-btn button {
     background-color: black;
     border: none;
 }
 
-.categories-btn__a a {
+.main__categories-btn a {
     text-decoration: none;
     color: white;
 }
 
-.container-newProduct img {
+.newProducts img {
     width: 65vw;
 }
 
-.title-newProduct {
+.newProducts__title {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.container-newProduct {
+.newProducts {
     display: flex;
     flex-direction: column;
 }
 
-.container-newProduct div {
+.newProducts div {
     margin: auto;
     margin-bottom: 2rem;
 }
@@ -324,22 +324,22 @@ h1 {
 }
 
 
-.container-mostSelled img {
+.mostSelleds img {
     width: 65vw;
 }
 
-.title-mostSelled {
+.mostSelleds__title {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.container-mostSelled {
+.mostSelleds {
     display: flex;
     flex-direction: column;
 }
 
-.container-mostSelled div {
+.mostSelleds div {
     margin: auto;
     margin-bottom: 2rem;
 }
@@ -350,24 +350,24 @@ h1 {
     margin-bottom: 8rem;
 }
 
-.mailingList-content {
+.mailingList__content {
     width: 300px;
 }
 
-.mailingList-title {
+.mailingList__title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
 }
 
-.mailingList-contentParagraph {
+.mailingList__text {
     font-family: 'Poppins';
     font-size: 1.1rem;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.mailingList-btn {
+.mailingList__btn {
     font-family: 'Poppins';
     border: 2px solid black;
     width: 18.75rem;
@@ -375,24 +375,16 @@ h1 {
     background-color: white;
 }
 
-.mailingList-btn a {
+.mailingList__btn a {
     font-family: 'Poppins';
     text-decoration: none;
     color: black;
 }
 
-.footerContent {
-    background-color: black;
-    color: white;
-}
+
 
 .footerContent p {
     font-family: 'Poppins';
-}
-
-.footerItems {
-    display: flex;
-    justify-content: center;
 }
 
 .footerItems-left {
@@ -429,14 +421,60 @@ h1 {
     color: white;
 }
 
+
+
+.footerContent {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "left-Footer right-Footer"
+        "social-Media social-Media"
+        "copyright copyright";
+        background-color: black;
+        color: white;
+}
+
+.footerItems {
+    grid-column: 1/4;
+    display: flex;
+
+}
+
+.footerItems-left {
+    grid-area: left-Footer;
+}
+
+.footerItems-left {
+    grid-area: left-Footer;
+}
+
+.footerItems-left p {
+    text-align: center;
+}
+
+.footerItems-right {
+    grid-area: right-Footer;
+}
+
+.footerItems-right p {
+    text-align: center;
+}
+
+.social-Media {
+    grid-area: social-Media;
+}
+
 .copyright {
+    grid-area: copyright;
     font-size: 0.8rem;
     opacity: 0.4;
     margin-left: 1rem;
+
 }
 
-.display {
-    display: none;
+footer {
+    grid-column: 1/4;
 }
 
 .carousel {
@@ -455,21 +493,18 @@ h1 {
     margin-bottom: 4rem;
 }
 
-
-
 @media screen and (min-width:600px) {
-
     .container-body {
         display: grid;
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         grid-template-rows: repeat(6, auto);
         grid-template-areas:
-            "container-header container-header container-header"
-            "container-categories container-categories container-categories"
-            "container-newProducts container-newProducts container-newProducts"
-            "container-mostSelleds container-mostSelleds container-mostSelleds"
-            "container-mailingList container-mailingList container-mailingList"
-            "container-footer container-footer container-footer";
+            "header header header"
+            "main main main"
+            "newProducts newProducts newProducts"
+            "mostSelleds mostSelleds mostSelleds"
+            "mailingList mailingList mailingList"
+            "footer footer footer";
     }
 
     .container-grid {
@@ -477,110 +512,59 @@ h1 {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         grid-template-rows: repeat(6, auto);
         grid-template-areas:
-            "container-header container-header container-header"
-            "container-categories container-categories container-categories"
-            "container-newProducts container-newProducts container-newProducts"
-            "container-mailingList container-mailingList container-mailingList"
-            "container-footer container-footer container-footer";
+            "header      header      header"
+            "main        main        main"
+            "newProducts newProducts newProducts"
+            "mailingList mailingList mailingList"
+            "footer      footer      footer";
     }
 
-
-
-    .headerMobile {
-        display: none;
-    }
-
-    .headerDesktop {
-        display: block;
-        width: 100vw;
-    }
-
-    .categories {
+    .main__categories {
         display: grid;
         grid-template-columns: repeat(2, minmax(200px, 1fr));
     }
 
-    .container-categories img {
+    .main__categories img {
         width: 45vw;
     }
 
-    .container-newProduct {
+    .newProducts {
         display: grid;
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         grid-template-areas: "title title title"
-            "muffing1 muffing2 muffing3"
-            "muffing4 muffing5 muffingNone";
+            "product product product"
+            "product product product";
     }
 
-    .title-newProduct {
+    .newProducts__title {
         grid-area: title;
     }
 
-    .muffing1 {
-        grid-area: muffing1;
-    }
-
-    .muffing2 {
-        grid-area: muffing2;
-    }
-
-    .muffing3 {
-        grid-area: muffing3;
-    }
-
-    .muffing4 {
-        grid-area: muffing4;
-    }
-
-    .muffing5 {
-        grid-area: muffing5;
-    }
-
-    .title-newProduct {
+    .newProducts__title {
         margin-left: 0.8rem;
     }
 
-    .container-newProduct img {
+    .newProducts img {
         width: 30vw;
     }
 
-    .container-mostSelled {
+    .mostSelleds {
         display: grid;
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         grid-template-areas: "title title title"
-            "cake1 cake2 cake3"
-            "cake4 cake5 cakeNone";
+            "product product product"
+            "product product product";
     }
 
-    .title-mostSelled {
+    .mostSelleds__title {
         grid-area: title;
     }
 
-    .cake1 {
-        grid-area: cake1;
-    }
-
-    .cake2 {
-        grid-area: cake2;
-    }
-
-    .cake3 {
-        grid-area: cake3;
-    }
-
-    .cake4 {
-        grid-area: cake4;
-    }
-
-    .cake5 {
-        grid-area: cake5;
-    }
-
-    .title-mostSelled {
+    .mostSelleds__title {
         margin-left: 0.8rem;
     }
 
-    .container-mostSelled img {
+    .mostSelleds img {
         width: 30vw;
     }
 
@@ -628,7 +612,7 @@ h1 {
         grid-area: copyright;
     }
 
-    .container-footer {
+    footer {
         grid-column: 1/4;
     }
 }
@@ -640,10 +624,10 @@ h1 {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         grid-template-rows: repeat(1, auto);
         grid-template-areas:
-            "nav logo icons";
+            "nav logo search";
     }
 
-    .title {
+    .logo {
         grid-area: logo;
     }
 
@@ -651,8 +635,8 @@ h1 {
         grid-area: nav;
     }
 
-    .icons {
-        grid-area: icons;
+    .header__searchBar {
+        grid-area: search;
     }
 
     #search {
@@ -663,20 +647,20 @@ h1 {
         display: block;
     }
 
-    .categories {
+    .main__categories {
         display: grid;
         grid-template-columns: repeat(3, minmax(200px, 1fr));
     }
 
-    .categories img {
+    .main__categories img {
         width: 30vw;
     }
 
-    .categories-btn {
-        width: 35vw;
+    .main__categories-btn {
+        width: 30vw;
     }
 
-    .title-newProduct {
+    .newProducts__title {
         font-size: 1.5rem;
         margin-top: 4rem;
         text-align: start;
@@ -687,7 +671,7 @@ h1 {
         margin-top: 2rem;
     }
 
-    .container-newProduct {
+    .newProducts {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, auto);
@@ -696,7 +680,7 @@ h1 {
             "muffing1 muffing2 muffing3 muffing4 muffing5";
     }
 
-    .title-newProduct {
+    .newProducts__title {
         grid-area: title;
     }
 
@@ -741,53 +725,33 @@ h1 {
     }
 
 
-    .container-newProduct {
+    .newProducts {
         justify-content: space-between;
         flex-direction: row;
     }
 
-    .container-newProduct img {
+    .newProducts img {
         width: 17vw;
     }
 
-    .container-mostSelled {
+    .mostSelleds {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
             "title title title title title"
-            "cake1 cake2 cake3 cake4 cake5";
+            "product product product product product";
     }
 
-    .title-mostSelled {
+    .mostSelleds__title {
         grid-area: title;
     }
 
-    .cake1 {
-        grid-area: cake1;
-    }
-
-    .cake2 {
-        grid-area: cake2;
-    }
-
-    .cake3 {
-        grid-area: cake3;
-    }
-
-    .cake4 {
-        grid-area: cake4;
-    }
-
-    .cake5 {
-        grid-area: cake5;
-    }
-
-    .container-mostSelleds img {
+    .section-mostSelleds img {
         width: 17vw;
     }
 
-    .title-mostSelled {
+    .mostSelleds__title {
         text-align: start;
         font-size: 1.5rem;
         margin-top: 2rem;
@@ -849,8 +813,8 @@ h1 {
 
 /* Animaciones */
 .text-focus-in:hover {
-    -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 @-webkit-keyframes text-focus-in {
