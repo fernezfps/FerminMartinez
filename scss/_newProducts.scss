@@ -1,0 +1,24 @@
+.newProducts {
+    display: flex;
+    flex-direction: column;
+
+    .newProducts__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    div {
+        margin: auto;
+        margin-bottom: 2rem;
+
+        img {
+            width: 65vw;
+        }
+
+        .price {
+            font-family: $fuenteSecundaria;
+        }
+    }
+
+}

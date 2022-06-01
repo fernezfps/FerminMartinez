@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@500&display=swap');
+@import "utilities/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuentePrincipal;
+}
+@import "header";
+@import "_main";
+@import "newProducts";
+@import "mostSelleds";
+@import "mailingList";
+@import "footer";
+@import "mediaqueries";
+

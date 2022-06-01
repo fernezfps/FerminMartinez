@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@500&display=swap');   
+header {
+
+    .logo {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            background-color: $colorNegro;
+            margin-top: 30px;
+            padding: 10px;
+            font-size: 1.5rem;
+
+            a {
+                color: $colorBlanco;
+                text-decoration: none;
+            }
+        }
+    }
+
+    nav {
+        .navbar {
+            position: absolute;
+            top: 0.2rem;
+            margin-top: 1.3rem;
+
+
+            .nav-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 62px;
+                text-align: center;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        color: $colorNegro;
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                        padding: 0.7rem;
+                        
+
+                        a:hover {
+                            font-weight: bolder;
+                        }
+                    }
+                }
+            }
+
+            .menu-items {
+                display: flex;
+                background-color: $colorBlanco;
+                width: 100vw;
+                position: relative;
+                z-index: 1;
+            }
+
+            .nav-container {
+                display: block;
+                position: relative;
+                height: 60px;
+
+                .checkbox {
+                    position: absolute;
+                    display: block;
+                    height: 32px;
+                    width: 32px;
+                    top: 20px;
+                    left: 20px;
+                    z-index: 5;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+
+                .hamburger-lines {
+                    display: block;
+                    height: 26px;
+                    width: 32px;
+                    position: absolute;
+                    top: 1.1rem;
+                    left: 1.3rem;
+                    z-index: 2;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .line {
+                        display: block;
+                        height: 4px;
+                        width: 100%;
+                        border-radius: 10px;
+                        background: #0e2431;
+                    }
+
+                    .line1 {
+                        transform-origin: 0% 0%;
+                        transition: transform 0.4s ease-in-out;
+                    }
+
+                    .line2 {
+                        transition: transform 0.2s ease-in-out;
+                    }
+
+                    .line3 {
+                        transform-origin: 0% 100%;
+                        transition: transform 0.4s ease-in-out;
+                    }
+                }
+            }
+
+            .menu-items {
+                height: 100vh;
+                width: 100vw;
+                transform: translate(-150%);
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.5s ease-in-out;
+                justify-content: center;
+                margin-left: -1rem;
+                margin-top: -3.3vh;
+                flex-shrink: 0;
+
+                li {
+                    margin-bottom: 2.5rem;
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                    font-style: italic;
+                }
+            }
+
+            .nav-container {
+                input[type="checkbox"]:checked~.menu-items {
+                    transform: translateX(0);
+                }
+
+                input[type="checkbox"]:checked~.hamburger-lines .line1 {
+                    transform: rotate(45deg);
+                }
+
+                input[type="checkbox"]:checked~.hamburger-lines .line2 {
+                    transform: scaleY(0);
+                }
+
+                input[type="checkbox"]:checked~.hamburger-lines .line3 {
+                    transform: rotate(-45deg);
+                }
+
+                input[type="checkbox"]:checked~.logo {
+                    display: none;
+                }
+
+            }
+        }
+    }
+
+
+    .header__searchBar {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 2.2rem;
+        display: flex;
+
+        i {
+            font-size: 1.7rem;
+            margin: 0.7rem 2rem 0rem 0rem;
+            color: $colorNegro;
+        }
+
+        #search {
+            display: none;
+        }
+    }
+
+
+}

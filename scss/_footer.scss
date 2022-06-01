@@ -1,0 +1,47 @@
+footer{
+    grid-column: 1/4;
+    background-color: $colorNegro;
+    color: $colorBlanco;
+
+    .footerItems-left{
+        margin-top: 40px;
+        text-align: center;
+
+        .footerItems-left-Cookies {
+            margin: 1.3rem;
+        }
+    }
+
+    .footerItems-right {
+        margin-top: 40px;
+        text-align: center;
+
+        .footerItems-right-Politics {
+            margin: 1.3rem;
+        }
+    }
+
+    .footer-SocialMedia-title {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+    .footer-SocialMedia-content {
+        display: flex;
+        justify-content: center;
+
+        a {
+            margin: 1rem;
+            color: $colorBlanco;
+        }
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+        opacity: 0.4;
+        margin-left: 1rem;
+    }
+    
+
+}

@@ -1,0 +1,74 @@
+main {
+
+    .contacto-title {
+        text-align: center;
+        margin: 3rem;
+    }
+
+    .btn {
+        display: flex;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    .carousel {
+        margin: 2rem;
+    }
+
+    .main__subtitle {
+        width: 20rem;
+        margin: auto;
+        text-align: center;
+        margin-top: 2rem;
+
+        h2 {
+            font-size: 3.75rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-family: $fuenteSecundaria;
+            width: 19rem;
+        }
+    }
+
+    .main__categories {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+
+        div {
+            margin: auto;
+            margin-bottom: 2rem;
+
+            p {
+                position: absolute;
+                color: $colorBlanco;
+                font-size: 2rem;
+                margin: 0.5rem;
+            }
+
+            img {
+                width: 80vw;
+            }
+        }
+    }
+
+    .main__categories-btn {
+        padding: 1rem 8rem 1rem 8rem;
+        background-color: $colorNegro;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 1rem;
+
+        button {
+            background-color: $colorNegro;
+            border: none;
+
+            a {
+                text-decoration: none;
+                color: $colorBlanco;
+            }
+        }
+    }
+}

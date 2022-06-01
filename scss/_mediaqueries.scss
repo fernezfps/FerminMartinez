@@ -1,0 +1,224 @@
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.section-newProducts {
+    grid-area: newProducts;
+}
+
+.section-mostSelleds {
+    grid-area: mostSelleds;
+}
+
+.section-mailingList {
+    grid-area: mailingList;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media only screen and (min-width: 400px) {
+    .container-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "header"
+            "main"
+            "newProducts"
+            "mostSelleds"
+            "mailingList"
+            "footer";
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(200px, 1fr));
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas:
+                "left-Footer right-Footer"
+                "social-Media social-Media"
+                "copyright copyright";
+            background-color: $colorNegro;
+            color: $colorBlanco
+        }
+
+        .footerItems-left {
+            grid-area: left-Footer;
+        }
+
+        .footerItems-right {
+            grid-area: right-Footer;
+        }
+
+        .social-Media {
+            grid-area: social-Media;
+        }
+
+        .copyright {
+            grid-area: copyright;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container-body {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "newProducts newProducts newProducts"
+            "mostSelleds mostSelleds mostSelleds"
+            "mailingList mailingList mailingList"
+            "footer footer footer";
+    }
+
+    main .main__categories {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+
+        div {
+            img {
+                width: 45vw;
+            }
+        }
+    }
+
+    .newProducts {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-areas: "title title title"
+            "product product product"
+            "product product product";
+    }
+
+    .newProducts__title {
+        grid-area: title;
+    }
+
+    .section-newProducts {
+        .newProducts {
+            img {
+                width: 30vw;
+            }
+        }
+    }
+
+    .mostSelleds {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-areas: "title title title"
+            "product product product"
+            "product product product";
+    }
+
+    .mostSelleds__title {
+        grid-area: title;
+    }
+
+    .section-mostSelleds .mostSelleds img {
+        width: 30vw;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-rows: repeat(1, auto);
+        grid-template-areas:
+            "nav logo search";
+
+        .logo {
+            grid-area: logo;
+        }
+
+        nav {
+            .navbar {
+                grid-area: nav;
+            }
+
+            .header__searchBar {
+                grid-area: search;
+
+                #search {
+                    display: block;
+                }
+            }
+        }
+
+
+    }
+
+    main {
+        .main__categories {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+
+            div {
+                img {
+                    width: 30vw;
+                }
+            }
+        }
+
+        .main__categories-btn {
+            width: 30vw;
+        }
+    }
+
+    .newProducts {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "title title title title title"
+            "product product product product product";
+
+        .newProducts__title {
+            font-size: 1.5rem;
+            margin-top: 4rem;
+            text-align: start;
+        }
+
+        .product {
+            a {
+                img {
+                    width: 17vw;
+                }
+            }
+        }
+    }
+
+    .mostSelleds {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+            "title title title title title"
+            "product product product product product";
+
+        .mostSelleds__title {
+            font-size: 1.5rem;
+            margin-top: 4rem;
+            text-align: start;
+        }
+
+        .product {
+            a {
+                img {
+                    width: 17vw;
+                }
+            }
+        }
+
+    }
+
+
+}

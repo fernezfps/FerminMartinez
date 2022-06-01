@@ -1,0 +1,37 @@
+.mailingList{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8rem;
+
+    .mailingList__content {
+        width: 300px;
+
+        .mailingList__title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .mailingList__text {
+            font-family: $fuenteSecundaria;
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .mailingList__btn {
+            font-family: $fuenteSecundaria;
+            border: 2px solid black;
+            width: 18.75rem;
+            height: 3.1rem;
+            background-color: $colorBlanco;
+
+            a {
+                font-family: $fuenteSecundaria;
+                text-decoration: none;
+                color: $colorNegro;
+            }
+        }
+    }
+
+}
