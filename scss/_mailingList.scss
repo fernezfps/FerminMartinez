@@ -1,7 +1,8 @@
 .mailingList{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8rem;
+    @include flex (flex, center, 8rem);
+    // display: flex;
+    // justify-content: center;
+    // margin-bottom: 8rem;
 
     .mailingList__content {
         width: 300px;

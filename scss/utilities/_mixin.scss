@@ -1,0 +1,5 @@
+@mixin flex ($flex, $content, $margin){
+    display: $flex;
+    justify-content: $content;
+    margin-bottom: $margin;
+}
